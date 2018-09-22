@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+/*字体载入*/
+@font-face{font-family:'didot'; src:url(../fonts/didot.ttf);}
+@font-face{font-family:'didot_litalic'; src:url(../fonts/didot_litalic.ttf);}
+
+
+/*头部*/
+.top{width:100%; background:#fff; text-align:center; padding-top:40px;  z-index:9999999;}
+.top{
+  text-decoration:none; 
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.top img{margin-bottom:20px; width:232px;}
+.nav_all{width:100%; height:33px; line-height:33px; margin:0 auto;}
+.nav_all ul li{margin:0 26px; display:inline-block; font-size:16px;}
+.nav_in{width:826px; position:absolute; top:120px; left:50%; margin-left:-413px; background:#fff; z-index:999999; display:none;}
+.nav_in ul{padding:30px 0; display:block; padding-left:66px;}
+.nav_in ul li{width:300px; height:48px; line-height:48px; float:left; margin-left:38px; font-size:16px;}
+.nav_in ul li:nth-child(even){margin-left:18px;}    
+.nav_in ul li a{width:300px; height:48px; display:block;}
+.nav_in ul li span{float:left; text-transform:uppercase; letter-spacing:2px; padding-left:34px;}
+.nav_in ul li label{float:right; cursor:pointer; padding-right:34px;}
+.nav_in_cover{width:80px; height:33px; position:absolute; top:-33px; left:109px; cursor:pointer;}
+
+/*swiper*/
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	background:#efeae6;
+}
+.bg_white{background:#fff;}
+
+/*首页滚动广告*/
+.swiper2{margin-top:100px;}
+.idx_av{width:1280px; margin:0 auto; /*overflow:hidden;*/ margin-bottom:120px;}
+.idx_av_l{width:67%; height:500px; float:left;}
+.idx_av_r{width:33%; height:500px; float:right;}
+.idx_av_r_in{width:64%; margin:0 auto; margin-top:10%;}
+.idx_av_r_t{width:100%; font-family:'didot'; font-size:30px; text-align:left; text-transform:uppercase;}
+.idx_av_r_m{width:100%; font-size:20px; text-align:left; margin-top:10%;}
+.idx_av_r_b{width:100%; overflow:hidden; text-align:left; margin-top:10%; font-size:14px; line-height:26px; } 
+.idx_av_r_b2{width:100%; text-align:left; margin-top:10%; font-size:12px; line-height:26px; } 
+.swiper-pagination2 .swiper-pagination-bullet {
+	width: 8px;
+	height: 8px;
+	display: inline-block;
+	border-radius: 100%;
+	background: #eeeae4;
+	opacity: 1
+}
+.swiper-pagination2 .swiper-pagination-bullet-active {
+	opacity: 1;
+	background: #21284d
+}
+
+/*首页产品*/
+.idx_pro{width:1280px; margin:0 auto; margin-top:50px; overflow:hidden;}
+.idx_pro ul{width:1300px}
+.idx_pro ul li{width:630px; margin-right:20px; float:left; margin-bottom:20px; position:relative;}
+.idx_pro ul li img{width:100%;}
+.pro_hover{width:100%; height:100%; background:rgba(0,8,49,0.8); position:absolute; top:0; left:0; cursor:pointer; display:none;}
+.pro_hover_in{width:100%; height:86px; text-align:center; color:#dec4ba; position:absolute; left:0; top:50%; margin-top:-43px;}
+.pro_hover_in span{font-size:30px; display:block; line-height:30px; font-family:'didot';}
+.pro_hover_in label{font-size:16px; display:block; line-height:16px; cursor:pointer;}
+.pro_hover_in em{width:38px; height:1px; line-height:1px; font-size:1px; overflow:hidden; background:#dec4ba; display:block; margin:16px auto;}
+
+/*首页标题*/
+.idx_title{width:100%; text-align:center;}
+.idx_title span{width:35px; height:42px; display:inline-block; margin-bottom:12px;}
+.idx_title label{height:32px; display:inline-block; font-family:'didot'; font-size:30px; text-transform:uppercase; margin-left:6px; margin-bottom:6px;}
+.idx_title dt{display:block; text-align:center; font-family:'didot_litalic'; font-size:20px; margin-bottom:12px;}
+
+
+.idx_title2{width:100%; text-align:center; margin-bottom:66px;}
+
+a.idx_more{width:120px; height:40px; margin:40px auto 60px auto; border:1px solid #21284d; border-radius:3px; text-align:center; font-size:18px; color:#21284d; font-family:'didot'; display:block; text-transform:uppercase; line-height:40px;}
+a.idx_more:hover{background:#21284d; color:#dec4ba;}
+
+/*首页底部说明*/
+.idx_bottom{width:1280px; margin:60px auto; }
+.idx_bottom ul li{width:33.3%; float:left; text-align:center; line-height:30px; font-size:16px;}
+.idx_bottom ul li span{display:block; padding-bottom:10px;}
+.idx_bottom ul li label{display:block;}
+.idx_bottom ul li a{display:inline-block; font-size:12px; border-bottom:1px solid #1f2850;}
+
+/*版权信息*/
+.copyright{padding:0 4%; height:55px; line-height:55px; color:#dec4ba; background:#1f2850; font-size:14px;}
+.copyright span{float:left;}
+.copyright a{color:#dec4ba; display:inline-block}
+.copyright label{float:right;}
+
+/*展示二维码*/
+.see_qr{width:100%; height:100%; background:rgba(0,8,49,0.8); position:fixed; top:0; left:0; z-index:9999; display:none;}
+.see_qr2{width:100%; height:100%; background:rgba(0,8,49,0.8); position:fixed; top:0; left:0; z-index:9999; display:none;}
+.wx_qr{width:18%; height:544px; position:absolute; top:50%; left:50%; margin-top:-272px; margin-left:-9%;}
+
+
+/*产品页分类*/
+.pro_title{width:100%; text-align:center; position:absolute; top:50%; margin-top:-36px; left:0;}
+.pro_title span{width:35px; height:42px; display:inline-block; margin-bottom:6px;}
+.pro_title label{height:32px; display:inline-block; font-family:'didot'; font-size:30px; text-transform:uppercase; margin-left:6px; margin-bottom:6px;}
+.pro_title dt{display:block; text-align:center; font-family:'didot_litalic'; font-size:20px;}
+
+/*分类说明*/
+.class_details{width:1138px; margin:50px auto; font-size:16px; line-height:26px; text-align: justify;}
+
+
+/*联系我们*/
+.contact{width:1280px; margin:0 auto; text-align:center; margin-top:80px; margin-bottom:80px;}
+.contact a{display:inline-block; margin:0 30px;}
+.contact a img{width:70%;}
+
+/*品牌故事*/
+.brand_video{width:1280px; height:719px; margin:50px auto; position:relative;}
+.jwlogo{display:none;}
+.video_bg{width:1280px; height:719px; position:absolute; top:0; left:0; background:url(images/bg.jpg) center top no-repeat; background-size:100%; z-index:9999999999;}
+.brand_list{width:1280px; margin:0 auto; margin-bottom:50px; padding-top:50px;}
+.brand_font{width:548px;}
+.brand_font span{display:block; font-size:24px; margin-bottom:30px;}
+.brand_font label{display:block; font-size:16px; line-height:26px;}
+.brand_pic{width:548px;}
+.fl_l{float:left;}
+.fl_r{float:right;}
+
+.stores{margin:0 auto; margin-top:80px; width:600px;}
+.stores_list{ margin-bottom:80px;}
+.stores_list_l{width:100px; height:100px; text-align:center; line-height:100px; float:left; background:#eecdc3; color:#333; font-size:50px; font-family:'didot'; text-transform:uppercase; margin-right:30px;}
+.stores_list_r{float:left;}
+.stores_list_r span{display:block; font-size:26px; margin-bottom:30px; margin-top:18px; font-weight:bold;}
+.stores_list_r label{display:block; cursor:text; font-size:14px;}

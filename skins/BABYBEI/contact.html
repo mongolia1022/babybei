@@ -1,0 +1,217 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>BABYBEI</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/css.css" />
+<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+<link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+
+<!--JQ基础文件-->
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+<!--IE6 PNG透明-->
+<!--[if lte IE 6]>
+<script src="js/DD_belatedPNG_0.0.8a.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        DD_belatedPNG.fix('div, ul, img, li, input , a');
+    </script>
+<![endif]-->
+
+<!--wow.js-->
+<script type="text/javascript" src="js/wow.js"></script>
+<script>
+var wow = new WOW({  
+    boxClass: 'wow',  
+    animateClass: 'animated',  
+    offset: 0,  
+    mobile: true,  
+    live: true  
+});  
+wow.init();  
+</script>
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="dist/css/swiper.min.css">
+
+</head>
+
+<body>
+
+<div class="top">
+	<img src="images/logo.png" />
+    <div class="nav_all">
+        <ul>
+            <li id="pro"><a href="#">产品系列</a></li>
+            <li><a href="#">品牌故事</a></li>
+            <li><a href="#">官方商城</a></li>
+            <li><a href="#">线下门店</a></li>
+            <li><a href="#">联系我们</a></li>
+        </ul>
+    </div>
+    <div class="nav_in">
+    	<div class="nav_in_cover"></div>
+    	<ul class="clear">
+        	<li>
+            	<a href="#">
+                	<span>STARRT NIGHT</span>
+                    <label>繁星之夜系列</label>
+                </a>
+            </li>
+        	<li>
+            	<a href="#">
+                	<span>NEW CHINESE</span>
+                    <label>东方之境系列</label>
+                </a>
+            </li>
+        	<li>
+            	<a href="#">
+                	<span>LITTLE WORLD</span>
+                    <label>迷你世界系列</label>
+                </a>
+            </li>
+        	<li>
+            	<a href="#">
+                	<span>BABYBEI G.</span>
+                    <label>创意随笔系列</label>
+                </a>
+            </li>
+        	<li>
+            	<a href="#">
+                	<span>ARCH-MARK</span>
+                    <label>建筑印记系列</label>
+                </a>
+            </li>
+        	<li>
+            	<a href="#">
+                	<span>UNEXP. WONDER</span>
+                    <label>邂逅自然系列</label>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script>
+    	$(function(){
+			$('#pro').mouseover(function(){
+				//$('.nav_in').slideDown();	
+				$('.nav_in').slideDown();
+				$('.top').css('background','#fff');
+			});
+			
+			$('.nav_in').mouseleave(function(){
+				//$('.nav_in').slideDown();	
+				$('.nav_in').slideUp();
+				$('.top').css('background','none');
+			});
+		});
+    </script>
+</div>
+
+<!-- Swiper -->
+<div class="swiper-container swiper1">
+	
+    <div class="swiper-wrapper">
+    <div class="swiper-slide" style="height:525px; background:url(images/banner_contact.jpg) center top no-repeat;"></div>
+</div>
+    <!-- Add Pagination
+    <div class="swiper-pagination swiper-pagination1"></div>
+     -->
+</div>
+
+
+
+<!-- Swiper JS -->
+<script src="dist/js/swiper.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+var swiper1 = new Swiper('.swiper1', {
+	pagination: '.swiper-pagination1',
+	paginationClickable: true,
+	spaceBetween: 30,
+	effect: 'fade',
+	autoplay: 2500,
+	autoplayDisableOnInteraction: false
+});
+var swiper2 = new Swiper('.swiper2', {
+	pagination: '.swiper-pagination2',
+	paginationClickable: true,
+	spaceBetween: 30,
+	autoplay: 2500,
+	autoplayDisableOnInteraction: false
+});
+</script>
+
+<!--联系我们-->
+<div class="contact">
+	<a href="###" class="to_see_qr">
+    	<img src="images/dot_contact1.png" />
+    </a>
+	<a href="###" class="to_see_qr">
+    	<img src="images/dot_contact2.png" />
+    </a>
+	<a href="###" class="to_see_qr">
+    	<img src="images/dot_contact3.png" />
+    </a>
+	<a href="###" class="to_see_qr">
+    	<img src="images/dot_contact4.png" />
+    </a>
+</div>
+
+<!--首页底部说明-->
+<div class="idx_bottom">
+  <ul class="clear">
+    	<li>
+        	<span>销售门店</span>
+            <label>我们将在销售店铺恭候您的光临</label>
+            <a href="###" class="to_see_qr">寻找销售店铺</a>
+        </li>
+   	<li>
+        	<span>联系方式</span>
+            <label>我们将尽快给予您答复</label>
+            <a href="###" class="to_see_qr2">联系我们</a>
+        </li>
+   	<li>
+        	<span>保养建议与专业服务</span>
+            <label>查看我们的专业服务与保养建议</label>
+            <a href="###" class="to_see_qr">访问专栏</a>
+        </li>
+    </ul>
+</div>
+
+<!--版权信息-->
+<div class="copyright clear">
+	<span><a href="###" class="to_see_qr">FAQ</a>　　<a href="###" class="to_see_qr">法律声明</a>　　<a href="###" class="to_see_qr">私隐政策</a>　　<a href="###" class="to_see_qr">网站地图</a>　　<a href="###" class="to_see_qr">工作机会</a>　　<a href="###" class="to_see_qr">专门店</a></span>
+    <label>粤ICP备15030916号</label>
+</div>
+
+
+<!--二维码显示-->
+<div class="see_qr">
+	<div class="wx_qr"><img src="images/qr.png" width="100%" /></div>
+</div>
+
+<div class="see_qr2">
+	<div class="wx_qr"><img src="images/qr2.png" width="100%" /></div>
+</div>
+
+<script>
+	$(function(){
+		$('.to_see_qr').click(function(){
+			$('.see_qr').fadeIn()
+		});	
+		$('.to_see_qr2').click(function(){
+			$('.see_qr2').fadeIn()
+		});	
+		$('.see_qr').click(function(){
+			$('.see_qr').fadeOut()
+		});	
+		$('.see_qr2').click(function(){
+			$('.see_qr2').fadeOut()
+		});	
+	});
+</script>
+
+</body>
+</html>
