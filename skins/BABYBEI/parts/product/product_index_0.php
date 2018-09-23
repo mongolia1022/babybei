@@ -1,24 +1,63 @@
 <!-- 产品列表页 -->
-        	<div class="in_pro">
-            <?php if( !empty( $tag['data.results'] ) )
-        {?>
-      		<ul>
-              <?php foreach($tag['data.results'] as $k =>$data)
-        {?>
-            	<li>
-                	<img src="<?php echo ispic($data['smallPic']); ?>" width="236" height="156">
-                    <div class="clear"></div>
-                    <div class="pro_name">
-                    	<a href="<?php echo sys_href($data['channelId'],'list',$data['id'])?>"><?php echo sys_substr($data['title'],30,true); ?></a>
-                    </div>
-                </li>
-                <?php
-        }?>
-                <div class="clear"></div>
-            </ul>
-            <?php }?>
-      </div>
+<!-- Swiper -->
 
-      <div class="page">
-    <?php if($tag['pager.cn']) echo $tag['pager.cn']; ?>
+<!-- Swiper -->
+<div class="swiper-container swiper1">
+
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background:#ece7e3;">
+
+            <div class="pro_title wow flipInX">
+                <?php doc_focus('2',1,1,0,0,true,'id',intval($data['ordering']))?>
+            </div>
+            <?php doc_focus('4',1,1,0,0,true,'id',intval($data['ordering']))?>
+        </div>
+    </div>
+    <!-- Add Pagination
+    <div class="swiper-pagination swiper-pagination1"></div>
+     -->
+</div>
+
+<!-- Swiper JS -->
+<script src="<?php echo $tag['path.skin']; ?>dist/js/swiper.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper1 = new Swiper('.swiper1', {
+        pagination: '.swiper-pagination1',
+        paginationClickable: true,
+        spaceBetween: 30,
+        effect: 'fade',
+        autoplay: 2500,
+        autoplayDisableOnInteraction: false
+    });
+    var swiper2 = new Swiper('.swiper2', {
+        pagination: '.swiper-pagination2',
+        paginationClickable: true,
+        spaceBetween: 30,
+        autoplay: 2500,
+        autoplayDisableOnInteraction: false
+    });
+</script>
+
+<div class="class_details wow fadeInUp"><?php echo $data['description']; ?></div>
+
+<!--产品列表-->
+<div class="idx_pro">
+    <ul class="clear">
+        <?php foreach($tag['data.results'] as $k =>$data)
+        {?>
+            <li class="wow fadeInUp">
+                <img src="<?php echo ispic($data['smallPic']); ?>" />
+                <div class="pro_hover to_see_qr">
+                    <div class="pro_hover_in">
+                        <span>MORE</span>
+                        <em></em>
+                        <label>查看详情</label>
+                    </div>
+                </div>
+            </li>
+            <?php
+        }?>
+    </ul>
 </div>

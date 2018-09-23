@@ -19,4 +19,14 @@ $ico = ispic($data['originalPic'])?'<img src="'.$data['originalPic'].'" />':''; 
 $select = $params['id']==$data['id']?$select:''; 
 $target = $data['isTarget']?$target:'';
 ?>
-<li onmouseover="setTab(1,<?php echo $i?>)" class="<?php echo $select?>"><a href="###" class="pst_bg<?php echo $i+1?> <?php echo $select?>"></a></li>
+<div class="swiper-slide clear bg_white">
+    <div class="idx_av_l" style="background:url(<?php echo ispic($data['originalPic']); ?>) no-repeat; background-size:100%;"></div>
+    <div class="idx_av_r">
+        <div class="idx_av_r_in">
+            <div class="idx_av_r_t"><?php echo $data['keywords'];?></div>
+            <div class="idx_av_r_m"><?php echo $data['title'];?></div>
+            <div class="idx_av_r_b"><?php echo $data['description']; ?></div>
+            <div class="idx_av_r_b2"><a href="<?php echo sys_href($data['channelId'],'product',$data['id'])?>">浏览此系列 &gt;</a></div>
+        </div>
+    </div>
+</div>

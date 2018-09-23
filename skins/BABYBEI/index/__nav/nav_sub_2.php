@@ -19,4 +19,17 @@ $ico = ispic($data['originalPic'])?'<img src="'.$data['originalPic'].'" />':''; 
 $select = $params['id']==$data['id']?$select:''; 
 $target = $data['isTarget']?$target:'';
 ?>
-<li <?php echo $select;?>><a href="<?php echo $url?>" <?php echo $target?>><?php echo $data['title'];?></a></li>
+<div class="idx_pro">
+    <div class="idx_title2 wow flipInX">
+        <!--
+        <span><img src="images/icon_b.png" width="100%" /></span>
+        <label>STRRAY NIGHT</label>
+        <dt>collection</dt>
+        -->
+        <?php doc_focus('2',1,1,0,0,true,'id',intval($data['ordering']))?>
+    </div>
+    <ul class="clear">
+        <?php doc_product($data['id'],4,0,0,0,0,true,false,'ordering',0)?>
+    </ul>
+    <a href="" class="idx_more wow flipInY">MORE</a>
+</div>

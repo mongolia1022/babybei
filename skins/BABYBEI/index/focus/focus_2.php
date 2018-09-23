@@ -3,7 +3,7 @@
 		foreach($flash['results'] as $data)
 		{
 	   ?>
-<li><img src="<?php echo $data['picpath'];?>" width="110" height="110"><span><?php echo $data['title'];?></span></li>
-		  <?php 
+            <div class="wx_qr"><img src="<?php echo $data['picpath'];?>" width="100%" /></div>
+		  <?php
 		}
 		?>
