@@ -19,9 +19,4 @@ $ico = ispic($data['originalPic'])?'<img src="'.$data['originalPic'].'" />':''; 
 $select = $params['id']==$data['id']?$select:''; 
 $target = $data['isTarget']?$target:'';
 ?>
-<li>
-    <a href="<?php echo $url?>">
-        <label><?php echo $data['title'];?></label>
-        <span><?php echo $data['keywords'];?></span>
-    </a>
-</li>
+    <dd><a href="<?php echo $url?>"><?php echo $data['title'];?></a></dd>

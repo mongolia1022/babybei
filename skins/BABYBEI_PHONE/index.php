@@ -114,8 +114,8 @@
 <!--返回顶部-->
 <div class="go_back_top wow fadeInUp"><a href="#" class="iconfont">返回顶层 &#xe605;</a></div>
 
-
-
+<!--首页底部说明-->
+<?php doc_article('14',0,0,0,0,0,true,true,'id',0)?>
 
 
 <!--二维码显示-->

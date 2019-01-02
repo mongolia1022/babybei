@@ -29,7 +29,9 @@ $isPro=$data['id']==1;
     <label class="iconfont">&#xe702;</label>
     <em class="iconfont">&#xe602;</em>
     <div class="clear"></div>
+    <dl>
     <?php nav_sub($data['id'],0,0);?>
+    </dl>
 </li>
 <?php }else{?>
     <li><a href="<?php echo $url?>"><?php echo $data['title'];?></a></li>

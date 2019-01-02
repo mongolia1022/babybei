@@ -18,7 +18,7 @@ define('HTMLPATH','');
 define('UPLOADPATH','/upload/');
 define('TIMEZONENAME','8');
 define('STYLENAME','BABYBEI');      //PC 模板
-define('MOBILENAME','BABYBEI');      //移动模板
+define('MOBILENAME','BABYBEI_PHONE');      //移动模板
 define('URLREWRITE',false);
 define('CACHETIME','0');
 define('DOCPING',false);
