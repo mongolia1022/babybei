@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+/*字体载入*/
+@font-face{font-family:'didot'; src:url(../fonts/didot.ttf);}
+@font-face{font-family:'didot_litalic'; src:url(../fonts/didot_litalic.ttf);}
+
+/*头部*/
+.top_all{width:100%; height:1.2rem; background:#fff; position:fixed; top:0; left:0; z-index:9999999999;}
+.logo{width:38%; position:absolute; top:33%; left:50%; margin-left:-19%;}
+.logo img{width:100%;}
+
+/*导航*/
+.nav_bar{width:1.2rem; height:1.2rem; position:absolute; left:0; top:0; background:url(../images/nav_icon.png) center center no-repeat; background-size:30% 30%; z-index:2}
+.nav_box{width:100%; height:100%; position:fixed; top:0; left:0; background:#1f2850; color:#fff; z-index:99999999999; display:none;}
+.nav_box a{color:#fff;}
+.nav_bar_close{width:1.2rem; height:1.2rem; position:absolute; left:0; top:0; background:url(../images/nav_icon_close.png) center center no-repeat; background-size:38% 38%; z-index:2}
+.nav_list{padding-top:16%; width:72%; margin:0 auto;}
+.nav_list ul li{width:100%; margin-top:0.6rem; padding-bottom:0.4rem; border-bottom:1px solid #eecdc3; font-size:0.4rem;}
+.nav_list ul li span{float:left;}
+.nav_list ul li label{float:right; display:none;}
+.nav_list ul li em{float:right; font-style:normal;}
+.nav_list ul li dl{display:none; border-top:2px solid #eecdc3; padding-top:0.6rem;}
+.nav_list ul li dl dd{font-size:0.3rem; line-height:0.8rem; display:block;}
+
+
+
+/*swiper*/
+.swiper-container {
+	width: 100%;
+	margin-top:1.2rem;
+	background:#eee;
+}
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+/*首页*/
+
+/*首页标题*/
+.idx_title{width:100%; margin:0.8rem 0;}
+.idx_title img{width:100%;}
+
+/*系列介绍*/
+.series_font{width:100%; text-align:center; font-size:0.4rem; margin-bottom:0.8rem; line-height:0.8rem;}
+.series_font a{color:#21284d; font-size:0.4rem; margin-bottom:0.8rem; margin-top:0.4rem;  display:block;}
+.series_pic{width:92%; margin-bottom:0.8rem;}
+.series_pic img{width:100%;}
+
+/*首页产品*/
+.idx_pro{width:84%; margin:0 auto; margin-bottom:0.6rem;}
+.idx_pro img{width:100%;}
+a.idx_more{width:32%; height:1rem; line-height:1rem; text-align:center; border:1px solid #21284d; font-size:0.45rem; text-transform:uppercase; font-family:'didot'; display:block; color:#21284d; margin:0 auto; border-radius:5%; margin-bottom:0.6rem;}
+
+/*返回顶层*/
+.go_back_top{width:84%; height:0.8rem; margin:0 auto; font-size:0.36rem;}
+
+/*底部联系方式*/
+.bottom_contact{width:84%; margin:0 auto; border-top:3px solid #ece8e2; padding-top:1.3rem; padding-bottom:0.8rem; text-align:center;}
+.bottom_contact ul{display:block;}
+.bottom_contact ul li{width:100%; margin-bottom:1rem;}
+.bottom_contact ul li span{font-size:0.46rem; margin-bottom:0.5rem; display:block;}
+.bottom_contact ul li label{font-size:0.38rem; margin-bottom:0.3rem; display:block;}
+.bottom_contact ul li a{font-size:0.33rem; padding-bottom:0.05rem; border-bottom:1px solid #1f2850; display:inline-block;}
+
+/*底部连接*/
+.bottom_links{width:84%; border-top:1px solid #1f2850; border-bottom:1px solid #1f2850; margin:0 auto; padding:0.3rem 0;}
+.bottom_links ul li{width:100%; line-height:1rem; font-size:0.38rem;}
+
+/*版权信息*/
+.copyright{width:100%; text-align:center; padding-top:0.3rem; padding-bottom:2rem; font-size:0.36rem; font-family:'didot';}
+
+/*展示二维码*/
+.see_qr{width:100%; height:100%; background:rgba(0,8,49,0.8); position:fixed; top:0; left:0; z-index:9999999999; display:none;}
+.see_qr2{width:100%; height:100%; background:rgba(0,8,49,0.8); position:fixed; top:0; left:0; z-index:9999999999; display:none;}
+.wx_qr{width:50%; height:544px; position:absolute; top:50%; left:50%; margin-top:-272px; margin-left:-25%;}
+
+/*内页*/
+
+/*内页banner*/
+.in_banner{width:100%;}
+.in_banner img{width:100%;}
+
+.mgt_1rem{margin-top:1rem;}
+.brand_font{width:100%; text-align:center; font-size:0.33rem; margin-bottom:0.8rem; line-height:0.6rem;}
+.brand_pic{width:84%; margin:0 auto;}
+.brand_pic img{width:100%;}
+.brand_title{width:84%; margin:1rem auto; margin-bottom:0.6rem; font-size:0.4rem;}
+.brand_font2{width:84%; margin:0 auto; font-size:0.33rem; margin-bottom:0.6rem; line-height:0.6rem;}
