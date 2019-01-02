@@ -26,7 +26,7 @@ $target = $data['isTarget']?$target:'';
             <div class="idx_av_r_t"><?php echo $data['keywords'];?></div>
             <div class="idx_av_r_m"><?php echo $data['title'];?></div>
             <div class="idx_av_r_b"><?php echo $data['description']; ?></div>
-            <div class="idx_av_r_b2"><a href="<?php echo sys_href($data['channelId'],'product',$data['id'])?>">浏览此系列 &gt;</a></div>
+            <div class="idx_av_r_b2"><a href="<?php echo $url?>">浏览此系列 &gt;</a></div>
         </div>
     </div>
 </div>

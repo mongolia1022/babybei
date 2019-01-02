@@ -19,11 +19,11 @@
 .nav_all ul li{margin:0 26px; display:inline-block; font-size:16px;}
 .nav_in{width:826px; position:absolute; top:120px; left:50%; margin-left:-413px; background:#fff; z-index:999999; display:none;}
 .nav_in ul{padding:30px 0; display:block; padding-left:66px;}
-.nav_in ul li{width:300px; height:48px; line-height:48px; float:left; margin-left:38px; font-size:16px;}
+.nav_in ul li{width:300px; height:48px; line-height:48px; float:left; margin-left:38px; font-size:14px;}
 .nav_in ul li:nth-child(even){margin-left:18px;}    
 .nav_in ul li a{width:300px; height:48px; display:block;}
-.nav_in ul li span{float:left; text-transform:uppercase; letter-spacing:2px; padding-left:34px;}
-.nav_in ul li label{float:right; cursor:pointer; padding-right:34px;}
+.nav_in ul li span{float:left; text-transform:uppercase; letter-spacing:2px; padding-left:30px;}
+.nav_in ul li label{float:right; cursor:pointer; padding-right:30px;}
 .nav_in_cover{width:80px; height:33px; position:absolute; top:-33px; left:109px; cursor:pointer;}
 
 /*swiper*/
@@ -144,6 +144,7 @@ a.idx_more:hover{background:#21284d; color:#dec4ba;}
 .stores{margin:0 auto; margin-top:80px; width:600px;}
 .stores_list{ margin-bottom:80px;}
 .stores_list_l{width:100px; height:100px; text-align:center; line-height:100px; float:left; background:#eecdc3; color:#333; font-size:50px; font-family:'didot'; text-transform:uppercase; margin-right:30px;}
+.stores_list_l2{width:100px; height:100px; text-align:center; float:left; margin-right:30px;}
 .stores_list_r{float:left;}
 .stores_list_r span{display:block; font-size:26px; margin-bottom:30px; margin-top:18px; font-weight:bold;}
 .stores_list_r label{display:block; cursor:text; font-size:14px;}

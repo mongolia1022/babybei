@@ -8,7 +8,7 @@
         <div class="swiper-slide" style="background:#ece7e3;">
 
             <div class="pro_title wow flipInX">
-                <?php doc_focus('2',1,1,0,0,true,'id',intval($data['ordering']))?>
+                <?php doc_focus('2',1,1,0,0,true,'id',intval(sys_menu_info('ordering')))?>
             </div>
             <?php doc_focus('4',1,1,0,0,true,'id',intval($data['ordering']))?>
         </div>
@@ -40,7 +40,7 @@
     });
 </script>
 
-<div class="class_details wow fadeInUp"><?php echo $data['description']; ?></div>
+<div class="class_details wow fadeInUp"><?php echo $tag['seo.description']; ?></div>
 
 <!--产品列表-->
 <div class="idx_pro">
@@ -61,3 +61,15 @@
         }?>
     </ul>
 </div>
+
+<!--产品hover JS-->
+<script>
+	$(function(){
+		$('.idx_pro ul li').mouseover(function(){
+			$(this).children('.pro_hover').stop(true,true).fadeIn();	
+		});	
+		$('.idx_pro ul li').mouseleave(function(){
+			$(this).children('.pro_hover').stop(true,true).fadeOut();	
+		});	
+	});
+</script>

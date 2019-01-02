@@ -2,8 +2,8 @@
 //数据库配置字段
 define('DB_HOSTNAME','localhost');
 define('DB_USER','root');
-define('DB_PASSWORD','root');
-define('DB_DBNAME','babybei');
+define('DB_PASSWORD','machinist14');
+define('DB_DBNAME','babybeiv2');
 define('TB_PREFIX','doc_');
 //模板配置字段
 define('WEBOPEN',true);

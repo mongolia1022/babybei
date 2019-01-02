@@ -2,8 +2,8 @@
 //数据库配置字段
 define('DB_HOSTNAME','localhost');
 define('DB_USER','root');
-define('DB_PASSWORD','root');
-define('DB_DBNAME','babybei');
+define('DB_PASSWORD','machinist14');
+define('DB_DBNAME','babybeiv2');
 define('TB_PREFIX','doc_');
 //模板配置字段
 define('WEBOPEN',true);
@@ -18,7 +18,7 @@ define('HTMLPATH','');
 define('UPLOADPATH','/upload/');
 define('TIMEZONENAME','8');
 define('STYLENAME','BABYBEI');      //PC 模板
-define('MOBILENAME','mobile');      //移动模板
+define('MOBILENAME','BABYBEI');      //移动模板
 define('URLREWRITE',false);
 define('CACHETIME','0');
 define('DOCPING',false);
@@ -46,31 +46,31 @@ define('paint_bgcolor','0xffffff');
 //分页样式
 define('PAGESTYLE','0'); 
 //首页调用模板图片的默认尺寸
-define('articleWidth','140');
-define('articleHight','105');
-define('listWidth','140');
-define('listHight','105');
-define('productWidth','140');
-define('productHight','105');
-define('pictureWidth','140');
-define('pictureHight','105');
+define('articleWidth','630');
+define('articleHight','630');
+define('listWidth','630');
+define('listHight','630');
+define('productWidth','630');
+define('productHight','630');
+define('pictureWidth','630');
+define('pictureHight','630');
 //列表模块页缩略图大小设置
 
 define('moduleUserWidth','120');
 define('moduleUserHight','120');
 /*上传图片的大小设置*/
-define('productMiddlePicWidth','560');
-define('productMiddlePicHight','420');
-define('productSmallPicWidth','300');
-define('productSmallPicHight','225');
-define('pictureMiddlePicWidth','560');
-define('pictureMiddlePicHight','420');
-define('pictureSmallPicWidth','300');
-define('pictureSmallPicHight','225');
-define('videoWidth','300');
-define('videoHight','225');
-define('userWidth','120');
-define('userHight','120');
+define('productMiddlePicWidth','630');
+define('productMiddlePicHight','630');
+define('productSmallPicWidth','630');
+define('productSmallPicHight','630');
+define('pictureMiddlePicWidth','630');
+define('pictureMiddlePicHight','630');
+define('pictureSmallPicWidth','630');
+define('pictureSmallPicHight','630');
+define('videoWidth','630');
+define('videoHight','630');
+define('userWidth','630');
+define('userHight','630');
 define('linkersWidth','90');
 define('linkersHight','30');
 //内容页列表模块单页显示默认条数

@@ -42,7 +42,7 @@ wow.init();
 <body>
 
 <div class="top">
-	<img src="<?php echo $tag['path.skin']; ?>images/logo.png" />
+	<a href="/"><img src="<?php echo $tag['path.skin']; ?>images/logo.png" /></a>
     <div class="nav_all">
         <ul>
             <?php nav_main()?>

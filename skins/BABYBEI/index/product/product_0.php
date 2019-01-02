@@ -2,7 +2,7 @@
 //首页产品列表
 ?>
 <li class="wow fadeInUp">
-    <img src="<?php echo $data['smallPic'];?>" />
+    <img src="<?php echo $data['smallPic'];?>"/>
     <div class="pro_hover to_see_qr">
         <div class="pro_hover_in">
             <span>MORE</span>

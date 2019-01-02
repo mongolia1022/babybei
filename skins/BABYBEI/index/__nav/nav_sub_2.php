@@ -31,5 +31,5 @@ $target = $data['isTarget']?$target:'';
     <ul class="clear">
         <?php doc_product($data['id'],4,0,0,0,0,true,false,'ordering',0)?>
     </ul>
-    <a href="" class="idx_more wow flipInY">MORE</a>
+    <a href="<?php echo $url?>" class="idx_more wow flipInY">MORE</a>
 </div>
