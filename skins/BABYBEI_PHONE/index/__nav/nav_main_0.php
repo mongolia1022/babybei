@@ -23,7 +23,7 @@ $isPro=$data['id']==1;
 
 /************** 样式正文 ************/
 ?>
-<?php if($isPro){?>
+<?php if($isPro){ ?>
 <li class="nav_pro">
     <span>产品系列</span>
     <label class="iconfont">&#xe702;</label>
@@ -33,6 +33,6 @@ $isPro=$data['id']==1;
     <?php nav_sub($data['id'],0,0);?>
     </dl>
 </li>
-<?php }else{?>
-    <li><a href="<?php echo $url?>"><?php echo $data['title'];?></a></li>
-<?php}?>
+<?php }else{ ?>
+    <li><a href="<?php echo $url?>&mdtp=2.html"><?php echo $data['title'];?></a></li>
+<?php } ?>
