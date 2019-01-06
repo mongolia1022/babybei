@@ -90,7 +90,7 @@
 <!-- Swiper -->
 <div class="swiper-container">
     <div class="swiper-wrapper">
-        <?php doc_focus('1',3,0,0,0,true,'id',0)?>
+        <?php doc_focus('5',3,0,0,0,true,'id',0)?>
     </div>
     <!-- Add Pagination -->
     <div class="swiper-pagination"></div>

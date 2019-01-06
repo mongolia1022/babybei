@@ -1,75 +1,25 @@
 <!-- 产品列表页 -->
-<!-- Swiper -->
+<!--内页banner-->
+<div class="in_banner"><img src="<?php echo $tag['path.skin']; ?>images/banner_pro.jpg" /></div>
 
-<!-- Swiper -->
-<div class="swiper-container swiper1">
 
-    <div class="swiper-wrapper">
-        <div class="swiper-slide" style="background:#ece7e3;">
-
-            <div class="pro_title wow flipInX">
-                <?php doc_focus('2',1,1,0,0,true,'id',intval(sys_menu_info('ordering')))?>
-            </div>
-            <?php doc_focus('4',1,1,0,0,true,'id',intval($data['ordering']))?>
-        </div>
+<!--简介-->
+<div class="wow fadeInUp">
+    <div class="brand_font mgt_1rem">
+        自古以来，人们从来没有停止过对美的追求。 <br />
+        生活缺少了美，就如宝石失去了璀璨火彩。<br />
+        可以说，衣食住行，解决的是人们在物质上的刚性需求，<br/>
+        而对美的创造，则是精神上的刚性需求。<br/>
     </div>
-    <!-- Add Pagination
-    <div class="swiper-pagination swiper-pagination1"></div>
-     -->
 </div>
 
-<!-- Swiper JS -->
-<script src="<?php echo $tag['path.skin']; ?>dist/js/swiper.min.js"></script>
 
-<!-- Initialize Swiper -->
-<script>
-    var swiper1 = new Swiper('.swiper1', {
-        pagination: '.swiper-pagination1',
-        paginationClickable: true,
-        spaceBetween: 30,
-        effect: 'fade',
-        autoplay: 2500,
-        autoplayDisableOnInteraction: false
-    });
-    var swiper2 = new Swiper('.swiper2', {
-        pagination: '.swiper-pagination2',
-        paginationClickable: true,
-        spaceBetween: 30,
-        autoplay: 2500,
-        autoplayDisableOnInteraction: false
-    });
-</script>
 
-<div class="class_details wow fadeInUp"><?php echo $tag['seo.description']; ?></div>
-
-<!--产品列表-->
-<div class="idx_pro">
-    <ul class="clear">
-        <?php foreach($tag['data.results'] as $k =>$data)
-        {?>
-            <li class="wow fadeInUp">
-                <img src="<?php echo ispic($data['smallPic']); ?>" />
-                <div class="pro_hover to_see_qr">
-                    <div class="pro_hover_in">
-                        <span>MORE</span>
-                        <em></em>
-                        <label>查看详情</label>
-                    </div>
-                </div>
-            </li>
-            <?php
-        }?>
-    </ul>
+<!--产品系列-->
+<div class="wow fadeInUp">
+    <?php foreach($tag['data.results'] as $k =>$data)
+    {?>
+        <div class="idx_pro"><a href="###" class="to_see_qr"><img src="<?php echo ispic($data['smallPic']); ?>" /></a></div>
+        <?php
+    }?>
 </div>
-
-<!--产品hover JS-->
-<script>
-	$(function(){
-		$('.idx_pro ul li').mouseover(function(){
-			$(this).children('.pro_hover').stop(true,true).fadeIn();	
-		});	
-		$('.idx_pro ul li').mouseleave(function(){
-			$(this).children('.pro_hover').stop(true,true).fadeOut();	
-		});	
-	});
-</script>

@@ -20,7 +20,7 @@ $select = $params['id']==$data['id']?$select:'';
 $target = $data['isTarget']?$target:'';
 ?>
 <div class="wow fadeInUp">
-    <div class="idx_title"><?php echo $data['title'];?></div>
+    <div class="idx_title"><?php doc_focus('6',1,1,0,0,true,'id',intval($data['ordering']))?></div>
     <div class="series_font">
         <?php echo $data['description']; ?>
         <a href="<?php echo $url?>" class="iconfont">浏览此系列 &#xe605;</a>

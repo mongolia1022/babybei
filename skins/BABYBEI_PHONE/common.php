@@ -40,7 +40,7 @@
 <!--头部-->
 <div class="top_all">
     <div class="nav_bar"></div>
-    <div class="logo"><a href="index.html"><img src="<?php echo $tag['path.skin']; ?>images/logo.jpg" /></a></div>
+    <div class="logo"><a href="/"><img src="<?php echo $tag['path.skin']; ?>images/logo.jpg" /></a></div>
 </div>
 
 <div class="nav_box animated">
